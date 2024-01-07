@@ -1,5 +1,10 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 body {
   margin: 0;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  max-width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +15,210 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.hero{
+  background-color: #F7F7F7;
+  height:100px;
+}
+
+.link,.logo{
+  line-height: 100px;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width:858px){
+  .lpimgs{
+    height: 200px;
+    width: 200px;
+  }
+  .topper2{
+    display: none;
+  }
+  .lpmain {
+    display: none;
+  }
+  .main {
+    flex-direction: column; /* Change to column layout */
+  }
+  .desc {
+    width: 100%; /* Take up the entire width */
+  }
+}
+
+@media (max-width: 420px) {
+  .topper2 {
+    display: none;
+  }
+  .lpmain {
+    display: none;
+  }
+  .logo{
+    width:50px ;
+  }
+  .auth{
+    display: none;
+  }
+  .signUp {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+  }
+
+  .form {
+    margin: 0 auto; /* Center the form in the single column */
+  }
+
+  .title {
+    text-align: center; /* Center the title text */
+  }
+  .lpimgs {
+    height: 100px;
+    width: 100px;
+    margin-left: 5px;
+  }
+  
+  .instagram img {
+    height: 50px;
+    width: 50px;
+  }
+  .main {
+    
+    display: grid;
+    
+  }
+  .desc {
+    width: 100%; /* Take up the entire width */
+  }
+}
+
+
+.lpimgs{
+  margin-left: 24px;
+}
+.main {
+  background-color: #F7F7F7;
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2:1 ratio */
+  gap: 10px; /* Adjust the gap between columns */
+  
+}
+.nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.logo{
+  width: 150px;
+}
+.title{
+  font-family: 'Cinzel', serif;
+}
+.header{
+  padding-left:50px;
+}
+.cards{
+  padding-left:50px;
+}
+.tagline{
+  font-family: 'Dancing Script', cursive;
+  color: #93573D;
+}
+.desc{
+  width: 80%;
+}
+.explore{
+  border: 1px solid #93573D;
+  padding: 10px 16px;
+  color: #93573D;
+  margin-bottom: 28px;
+}
+.main2{
+  background-color: #F4E9E3;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cookie {
+    flex: 1;
+    
+}
+.title2{
+  font-family: 'Cinzel', serif;
+}
+.tagline2{
+  font-family: 'Dancing Script', cursive;
+}
+.follow{
+  background-color: #F4E9E3;
+  padding: 8px 15px;
+  color: black;
+ }
+.addcart{
+  background-color: rgba(244, 233, 227);
+  padding: 8px 65px;
+  color: black;
+ }
+ .addcart:hover {
+  background-color: rgba(244, 233, 227, 0.6); 
+}
+ .login{
+   background-color:rgb(147,87,61);
+   padding: 6px 30px;
+   color: white;
+   border-radius: 1px;
+ }
+
+ .login:hover {
+  background-color: rgb(147,87,61,0.8);
+ }
+
+ #carousel{
+   max-height: 400px;
+ }
+ .search{
+  background-color: #93573D;
+  color: white;
+  border-radius: 3px;
+ }
+
+ .signUp{
+   background-color: #F4E9E3;
+   display: grid;
+   grid-template-columns: 1fr 2fr;
+ }
+
+.form{
+  margin-right: 16px;
+}
+ .input{
+   border-radius: 3px;
+   background-color: #F7F7F7;
+   padding: 10px;
+   width:100%;
+   outline: none;
+ }
+ .register{
+  background-color: #93573D;
+  color: white;
+  border-radius: 3px;
+  padding: 5px 20px;
+ }
+
+.topper{
+  position: absolute;
+  top: 100px;
+  left:50%;
+  z-index: 1; 
+}
+.topper2{
+  position: absolute;
+  top:350px;
+  left: 30%;
+  z-index: 2; 
 }
