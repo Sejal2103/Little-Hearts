@@ -9,8 +9,8 @@ Little Hearts is a dessert-oriented website that offers a delightful assortment 
   - MongoDB is used to store user login credentials.
 
 - **Shopping Cart:**
+  - Select the desired amount of quantity to the cart.
   - Add items to the shopping cart.
-  - Change the quantity of products in the cart.
   - Remove items from the cart.
 
 - **Checkout and Orders:**
