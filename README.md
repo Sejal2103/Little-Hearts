@@ -2,7 +2,7 @@
 
 Little Hearts is a dessert-oriented website that offers a delightful assortment of handcrafted cakes, cookies, and cupcakes. It's built using MERN (MongoDB, Express.js, React, Node.js) technologies.
 
-https://github.com/Sejal2103/Little-Hearts/assets/120708086/bbcc80ee-f186-4d09-9ab2-9c0e0174b404
+https://github.com/Sejal2103/Little-Hearts/assets/120708086/a0c31b7b-1639-4b6f-906c-dc52400715bb
 
 ## Features
 
